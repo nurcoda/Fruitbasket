@@ -31,7 +31,7 @@
 
                 <!-- <p [ngStyle]="{'color': fruit.stars > 4 ? fontColorGood : fontColorBad}">
                     ({{fruit.stars}})</p> -->
-
+                <!-- [ngClass]="{'fontColorBad':fruit.stars < 3, 'fontColorGood': fruit.stars >= 3}" -->
                 <p>
                     ({{fruit.stars}})</p>
 
@@ -44,7 +44,7 @@
                 @for(review of fruit.reviews; track review){
                 <div><b>{{review.name}}:</b><br>{{review.text}}</div>
                 } @empty {
-                no comments
+                no comments available
                 }
 
             </div>
