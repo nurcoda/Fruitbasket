@@ -32,7 +32,8 @@
                     }; -->
 
 
-                    <p>({{fruit.stars}})</p>
+                    <p [ngStyle]="{'color': fruit.stars > 4 ? fontColorGood : fontColorBad}">
+                        ({{fruit.stars}})</p>
                 </div>
             </div>
             <div><b>Art:</b><br>{{fruit.genus}}</div>
