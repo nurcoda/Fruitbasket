@@ -23,7 +23,4 @@ export class FruitlistComponent {
     this.fruitlistdata.addCommentToFruit(comment, index);
   }
 
-  // nameLog(name: string) {
-  //   console.log(name);
-  // }
 }
